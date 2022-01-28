@@ -42,7 +42,7 @@ const Banner = () => {
   <div className="carousel-item first active">
         <div className='home-banner home-banner-1'>
             <div className='home-banner-text mt-md-3'>
-            <h1 className='ms-5'>100% trusted and purity</h1>
+            <h1 className='ms-5 text-5xl'>100% trusted and purity</h1>
 
             <p className='ms-5'><b>We provide most cheap rate pricing in Bangladesh.</b></p>
             </div>

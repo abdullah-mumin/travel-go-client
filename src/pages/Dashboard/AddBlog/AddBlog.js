@@ -44,7 +44,7 @@ const AddBlog = () => {
     return (
         <div className="sm:flex block">
             <div className=" mx-auto mt-4 text-center">
-                <h1 className="text-green-500">Add Blog</h1>
+                <h1 className="text-green-500 text-5xl my-3">Add Blog</h1>
                 <form className="flex flex-col w-100" onSubmit={handleSubmit(onSubmit)}>
                     <input className="border-2 border-gray-300 m-2 px-2 rounded" {...register("name", {required: true})} placeholder="Place Name"/>
                     <textarea className="border-2 border-gray-300 m-2 px-2 rounded" {...register("description", {required: true})} placeholder="Place description"/>
