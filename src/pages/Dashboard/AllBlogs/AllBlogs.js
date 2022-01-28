@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import ServiceTable from '../ServiceTable/ServiceTable';
+import BlogTable from '../BlogTable/BlogTable';
 
 const AllBlogs = () => {
     const [services, setServices] = useState([]);
@@ -63,7 +63,7 @@ const AllBlogs = () => {
                             <th className="px-3 ">Action</th>                                         
                         </tr>
                             {
-                                services.map(service => <ServiceTable key={service._id} service={service} handleDeleteService={handleDeleteService} handleUpdateStatus={handleConfirm}/>
+                                services.map(service => <BlogTable key={service._id} service={service} handleDeleteService={handleDeleteService} handleUpdateStatus={handleConfirm}/>
                                     )
                             }
                     </tbody>

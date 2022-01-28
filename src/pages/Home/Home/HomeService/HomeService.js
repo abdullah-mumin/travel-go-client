@@ -17,8 +17,10 @@ const Service = ({service}) => {
           
           <div className="col">
                   <div className="card border-0">
-                      <img style={{width:'300px',height:'200px'}} src={photoUrl} alt={name}></img>
-                    <div className="card-body">
+                  <div className="d-flex align-items-center justify-content-center">
+                    <img style={{width:'300px',height:'200px'}} src={photoUrl} alt={name}></img>
+                    </div>
+                    <div className="card-body text-center">
                       <h3 className="card-title">{name}</h3>
                       <p>By <small>{bloggername}</small></p>
                       {

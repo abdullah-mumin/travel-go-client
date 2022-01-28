@@ -1,5 +1,5 @@
   import React from 'react';
-  const ServiceTable = ({service, handleDeleteService, handleUpdateStatus 
+  const BlogTable = ({service, handleDeleteService, handleUpdateStatus 
   }) => {
       const {name, price,status } = service.data;
 
@@ -19,4 +19,4 @@
       )
   };
 
-  export default ServiceTable;
+  export default BlogTable;
