@@ -1,0 +1,96 @@
+/* .bgimage{
+    background: linear-gradient(90deg, #fea87c 60%, #bf5655 40%);
+    background-attachment: inherit;
+}
+.pacific{
+    font-family: 'Pacifico', cursive;
+}
+.button-off{
+    border: 1px solid red;
+    color: white;
+    background-color: #bf5655;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all linear 0.3s;
+}
+.ico{
+    transition: all linear 0.3s;
+}
+.button-off:hover .ico{
+    padding-left: 5px;
+    padding-right: 10px;
+    visibility: visible;
+
+}
+.button-off:hover{
+    background-color:white ;
+    color: orange;
+}
+@media screen and (max-width: 488px){
+        .mediqe{
+            background-image: url('https://ifaz-s-products.web.app/static/media/ibrar.b91ae770.png');
+        }
+    }
+    @media screen and (max-width: 768px){
+        .ibu{
+            visibility: hidden;
+        }
+    } */
+    .first{
+        background: url('https://images.pexels.com/photos/9741288/pexels-photo-9741288.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') top center repeat-y;
+        background-repeat: no-repeat;
+        background-position:100% center ;
+        background-size: cover;
+        height: 60vh;
+     }
+     .btnslide{
+        display: none;
+        visibility: hidden;
+     }
+     body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+     }
+     .second{
+        background-image: url('https://images.pexels.com/photos/7600177/pexels-photo-7600177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-repeat: no-repeat;
+        background-position:100% center ;
+        background-size: cover;
+        height: 60vh;
+     }
+     .third{
+        background-image: url('https://wallpapercave.com/wp/wp4956754.jpg');
+        background-repeat: no-repeat;
+        background-position:100% center ;
+        background-size: cover;
+        height: 60vh;
+     }
+     .fourth{
+        background-image: url('https://images.pexels.com/photos/7599945/pexels-photo-7599945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-repeat: no-repeat;
+        background-position:100% center ;
+        background-size: cover;
+        height: 60vh;
+     }.carousel-control-prev{
+        margin-left: -15px;
+     }
+     .home-banner h1{
+         margin-top: 100px;
+     }
+     .carousel-control-next{
+        margin-right: -20px;
+     }
+     .home-banner-text{
+        width: 50%;
+        margin-top: 50px;
+        height: 200px;
+     }
+     .home-banner-text h1{
+       color: rgb(255, 255, 255);
+     }
+     .home-banner-text p{
+       color: rgb(255, 0, 255);
+     }

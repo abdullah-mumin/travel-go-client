@@ -1,0 +1,31 @@
+.cardContainer{
+    box-shadow: rgba(3, 15, 36, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-image: url('https://media.istockphoto.com/photos/white-abstract-marble-texture-silver-grey-light-background-wave-swirl-picture-id1277592603?b=1&k=20&m=1277592603&s=170667a&w=0&h=4-uL8pdN5DRnmaKKGzCX8QQ4BTFvnTQUhsQWJuYHgBk=');
+}
+
+.image-revw{
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1px;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+border: 5px solid rgb(80, 79, 79);
+}
+.reviewper{
+    margin: 30px;
+    border: 5px solid rgb(80, 79, 79);
+    border-radius: 10px;
+
+}
+.read{
+    font-size: 15px;
+}
+
+.cs{
+display: flex;
+justify-content: center;
+align-items: center;
+}

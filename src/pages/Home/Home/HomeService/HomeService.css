@@ -1,0 +1,53 @@
+.button-orange{
+    border: 1px solid #000000;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 10px 30px !important;
+    border-radius: 35px !important;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all linear 0.3s;
+}
+.ico{
+height: 0;
+width: 0;
+visibility: hidden;
+transition: all linear 0.3s;
+padding-top: 5px;
+
+}
+.selected{
+    background-color: #a0e8f1;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    margin: 5px;
+}
+.not-selected{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    color: #a0e8f1;
+    border: 1px solid #a0e8f1;
+}
+.button-orange:hover .ico{
+    padding-left: 5px;
+    padding-right: 5px;
+    visibility: visible;
+}
+
+.button-orange:hover{
+    border-color: 1px rgb(0, 0, 0) !important;
+    background-color:rgb(0, 0, 0) ;
+    color: #ffffff !important;
+}
+/* .cstyle img{
+    height: 300px;
+    width: 300px;
+} */
+body{
+    overflow-x: hidden;
+}
