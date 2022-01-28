@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import ManageAllOrder from '../ManageAllOrder/ManageAllOrder';
+import ServiceTable from '../ServiceTable/ServiceTable';
 
-const ManageAllOrders = () => {
+const AllBlogs = () => {
     const [services, setServices] = useState([]);
     const [reload, setReload] = useState(false);
+
     useEffect(() => {
         fetch('https://boiling-brushlands-56519.herokuapp.com/services')
         .then(res => res.json())
@@ -22,7 +23,7 @@ const ManageAllOrders = () => {
                 .then(data => {
                     if (data.deletedCount) {
                         alert('delete successfully')
-                        const remainingServices = services.data.filter(service => service._id !==id);
+                        const remainingServices = services.filter(service => service._id !==id);
                         setServices(remainingServices);
                     }
                 })
@@ -31,12 +32,13 @@ const ManageAllOrders = () => {
     const handleConfirm = (id) => {
         const confirmation = window.confirm('Are you sure you want to Confirm!');
         if (confirmation) {
-            fetch(`https://boiling-brushlands-56519.herokuapp.com/services/${id}`, {
+            fetch(`https://boiling-brushlands-56519.herokuapp.com/confirmation/${id}`, {
                 method: 'PUT',
             })
                 .then(res => res.json())
                 .then(data => {
                     if (data.modifiedCount) {
+                        alert('delete successfully')
                         setReload(!reload)
                     }
                     else {
@@ -46,7 +48,6 @@ const ManageAllOrders = () => {
         }
     };
 
-
     return (
         <div className='d-flex'>
             <div className="mt-5 ml-2">
@@ -54,13 +55,15 @@ const ManageAllOrders = () => {
                 <thead>
                     <tbody>
                         <tr className="bg-blue-500 text-white text-center">
-                            <th className="px-3">User</th>
-                            <th className="px-3">Date</th>
-                            <th className="px-3">Time</th>                         
-                            <th className="px-3">Status</th>                         
+                            <th className="px-3 ">Product Name</th>
+                            <th className="px-3 ">Product Price</th>
+                            <th className="px-3 ">Admin</th>
+                            <th className="px-3 ">Status</th>                                         
+                            <th className="px-3 ">Delete</th>
+                            <th className="px-3 ">Action</th>                                         
                         </tr>
                             {
-                                services.map(service => <ManageAllOrder key={service._id} service={service} handleConfirm={handleConfirm} handleDeleteService={handleDeleteService}/>
+                                services.map(service => <ServiceTable key={service._id} service={service} handleDeleteService={handleDeleteService} handleUpdateStatus={handleConfirm}/>
                                     )
                             }
                     </tbody>
@@ -68,7 +71,8 @@ const ManageAllOrders = () => {
             </table>
         </div>
         </div>
+        
     )
 };
 
-export default ManageAllOrders;
+export default AllBlogs;

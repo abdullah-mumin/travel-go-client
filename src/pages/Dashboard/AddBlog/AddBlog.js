@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import useAuth from '../../../Hooks/useAuth';
 import {Alert} from '@mui/material';
 import Snackbar from '@mui/material/Snackbar';
-const AddService = () => {
+const AddBlog = () => {
   const date = new Date();
   const status = "pending";
   const time = Date().toLocaleString();
@@ -64,4 +64,4 @@ const AddService = () => {
     );
 };
 
-export default AddService;
+export default AddBlog;

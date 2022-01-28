@@ -20,9 +20,9 @@ import {
     useRouteMatch
 } from "react-router-dom";
 import Review from '../../UserReviews/UserReviews';
-import AddAProduct from '../AddService/AddService';
+import AddBlog from '../AddBlog/AddBlog';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
-import ManageProducts from '../AllServices/AllServices';
+import ManageBlogs from '../AllBlogs/AllBlogs';
 import AdminRoute from '../AdminRoute/AdminRoute';
 import useFirebase from '../../../Hooks/useFirebase';
 import useAuth from '../../../Hooks/useAuth';
@@ -134,13 +134,13 @@ function Dashboard(props) {
                         <Review></Review>
                     </Route>
                     <Route path={`${path}/writeBlog`}>
-                        <AddAProduct></AddAProduct>
+                        <AddBlog></AddBlog>
                     </Route>
                     <AdminRoute path={`${path}/makeAdmin`}>
                         <MakeAdmin></MakeAdmin>
                     </AdminRoute>
                     <AdminRoute path={`${path}/manageAllblogs`}>
-                        <ManageProducts></ManageProducts>
+                        <ManageBlogs></ManageBlogs>
                     </AdminRoute>
                 </Switch>
             </Box>

@@ -1,5 +1,5 @@
 import React from 'react';
-const ManageAllOrder = ({service,handleConfirm,handleDeleteService
+const ManageAllBlog = ({service,handleConfirm,handleDeleteService
 }) => {
     const {name,status,_id } = service?.data;
     const {date,time} = service;
@@ -31,4 +31,4 @@ const ManageAllOrder = ({service,handleConfirm,handleDeleteService
     )
 };
 
-export default ManageAllOrder;
+export default ManageAllBlog;
