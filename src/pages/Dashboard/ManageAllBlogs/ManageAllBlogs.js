@@ -3,7 +3,8 @@ import ManageAllOrder from '../ManageAllBlog/ManageAllBlog';
 
 const ManageAllBlogs = () => {
     const [services, setServices] = useState([]);
-    const [reload, setReload] = useState(false);
+    const [reload, setReload] = useState(true);
+
     useEffect(() => {
         fetch('https://boiling-brushlands-56519.herokuapp.com/services')
         .then(res => res.json())

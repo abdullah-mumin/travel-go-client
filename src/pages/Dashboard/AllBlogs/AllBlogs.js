@@ -9,7 +9,7 @@ const AllBlogs = () => {
         fetch('https://boiling-brushlands-56519.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setServices(data.result))
-    },[])
+    },[reload])
 
     const handleDeleteService = id => {
         console.log(id)
@@ -57,7 +57,7 @@ const AllBlogs = () => {
                         <tr className="bg-blue-500 text-white text-center">
                             <th className="px-3 ">Product Name</th>
                             <th className="px-3 ">Product Price</th>
-                            <th className="px-3 ">Admin</th>
+                            <th className="px-3 ">Email</th>
                             <th className="px-3 ">Status</th>                                         
                             <th className="px-3 ">Delete</th>
                             <th className="px-3 ">Action</th>                                         
